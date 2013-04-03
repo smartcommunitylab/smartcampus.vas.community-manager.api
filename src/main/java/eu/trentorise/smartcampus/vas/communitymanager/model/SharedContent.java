@@ -19,7 +19,7 @@ import java.util.Date;
 
 public class SharedContent implements Comparable<SharedContent> {
 	private long entityId;
-	private String entityType;
+	private long entityType;
 	private String title;
 	private String[] tags;
 	// serie di keyword o concetti
@@ -28,7 +28,7 @@ public class SharedContent implements Comparable<SharedContent> {
 	private Date creationDate;
 
 	private MinimalProfile user;
-	
+
 	public long getEntityId() {
 		return entityId;
 	}
@@ -37,11 +37,11 @@ public class SharedContent implements Comparable<SharedContent> {
 		this.entityId = entityId;
 	}
 
-	public String getEntityType() {
+	public long getEntityType() {
 		return entityType;
 	}
 
-	public void setEntityType(String entityType) {
+	public void setEntityType(long entityType) {
 		this.entityType = entityType;
 	}
 
