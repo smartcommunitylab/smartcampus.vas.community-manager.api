@@ -7,7 +7,11 @@ import eu.trentorise.smartcampus.common.Concept;
 public class Entity {
 	private long id;
 	private long creatorId;
+
+	// I can have type as name or as its id
 	private String type;
+	private long typeId;
+
 	private String name;
 	private String description;
 	private List<Concept> tags;
@@ -67,6 +71,14 @@ public class Entity {
 
 	public void setRelations(List<Long> relations) {
 		this.relations = relations;
+	}
+
+	public long getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(long typeId) {
+		this.typeId = typeId;
 	}
 
 }
